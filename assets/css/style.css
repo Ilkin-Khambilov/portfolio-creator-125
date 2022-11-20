@@ -1,0 +1,68 @@
+/* 
+
+
+
+*/
+
+
+
+
+
+:root {
+    --primary-black: #000;
+
+}
+@import url('./reset.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+a {
+    text-decoration: none;
+}
+html {
+    font: size 16px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header {
+    display: flex;
+    /* flex-direction: row; bu istiqameti mueyyenlewdirir: justif-content align-items */
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center; /* cross axis y oxu */
+    padding-top: 2.56rem;
+    padding-left: 7.03rem;
+    padding-right: 7.03rem;
+    /* margin-top: 41px; */
+    /* background-color: brown; */
+}
+.fa-bars {
+    display: none;
+}
+
+header .nav-links a {
+    color: #000;  
+    /* nav(--primary-black); color does not change. Reng deyishmir default da nedirse o qalir */
+}
+
+@media (max-width:950px) {
+    
+    header{
+        padding-left: 1.37rem;
+        padding-right: 1.37rem;
+    }
+
+    header > nav {
+        display: none;
+    }
+
+    .fa-bars{
+        display: flex;
+        font-size: 2rem;
+    }
+
+}
