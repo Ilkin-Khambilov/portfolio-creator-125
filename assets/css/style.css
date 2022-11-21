@@ -10,8 +10,17 @@
 
 :root {
     --primary-black: #000;
+    --primary-orange:#FF8A56;
+    --primary-grey: #666666;
+
+
 
 }
+
+* {
+    outline:1px solid red;
+}
+
 @import url('./reset.css');
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -45,15 +54,15 @@ header {
 }
 
 header .nav-links a {
-    color: #000;  
-    /* nav(--primary-black); color does not change. Reng deyishmir default da nedirse o qalir */
+color: var(--primary-black);
 }
 
 @media (max-width:950px) {
     
     header{
-        padding-left: 1.37rem;
-        padding-right: 1.37rem;
+        padding: 0 1.37rem;
+        /* padding-left: 1.37rem;
+        padding-right: 1.37rem; */
     }
 
     header > nav {
@@ -63,6 +72,93 @@ header .nav-links a {
     .fa-bars{
         display: flex;
         font-size: 2rem;
+        cursor: pointer;
     }
 
 }
+
+/* INTRODUCTION SECTION */
+
+    .introduction {
+        padding: 0 7.03rem ;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .intro-left-side {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding-top: 7.31rem ;
+    min-width: 44.68rem ;
+    }
+
+    /* child selector */
+    .intro-left-side > h1 {
+        font-size: 4.5rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    
+    }
+
+    .intro-left-side > h1 > span {
+        color:var(--primary-orange);
+
+    }
+
+    .intro-left-side > p {
+        font-size: 1.37rem;
+        font-weight: 400;
+        color: var(--primary-grey);
+    }
+
+    /* descendant selector
+    .intro-left-side h1 {
+
+    } */
+
+    .intro-right-side {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 4.37rem ;
+        min-width: 31.25rem;
+    }
+
+    @media(max-width:1473px) and (min-width:768px) {
+        .introduction {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
+        .intro-left-side {
+            flex-basis: 100%;
+            background-color: red;
+            align-items: center; 
+        }
+        .intro-right-side {
+            justify-content: center;
+        }
+    }
+    @media (max-width:768px) {
+        .introduction {
+            padding-left: 0;
+            padding-right: 0;
+         }
+
+         .intro-left-side {
+            min-width: 400px;
+            text-align: center;
+         }
+    
+         body {
+            overflow-x:hidden;
+        }
+         
+    }
+
+    
+
+
+
