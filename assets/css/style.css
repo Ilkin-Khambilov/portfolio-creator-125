@@ -613,11 +613,10 @@ font-size:  3.37rem;
 }
 
 /* MEDIA FOR PRODUCT DESIGNER SECTION */
-
-@media(max-width:768px){
+@media(max-width:1182px){
     .product-designer-section{
-        padding-left: 3.1rem;
-        padding-right: 3.1rem;
+        /* padding-left: 3.1rem;
+        padding-right: 3.1rem; */
     }
 
     .thats-me-section {
@@ -638,3 +637,139 @@ font-size:  3.37rem;
    
     
  }
+
+ @media(max-width:627px){
+    .product-designer-section{
+        padding-left: 3.1rem;
+        padding-right: 3.1rem;
+    }
+
+ }
+
+ /* EDUCATION AND WORK EXPERIENCE */
+
+.education-and-work-section{
+    display: flex;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: 4.65rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.education-side{
+    flex-basis: 50%;
+    min-width: 447px;
+}
+
+.education-side h1 {
+    font-size: 36px;
+    margin-bottom:  0.94rem;
+}
+
+.education-side .education-top {
+    font-size: 24px;
+    margin-bottom: 1.94rem;
+}
+
+/* .education-side .education-top img {
+    margin-right: 2rem;
+} */
+
+.education-side .education-bottom {
+    font-size: 1rem;
+}
+
+.education{
+    padding: 20px 20px 20px 0;
+    border-bottom:1px solid #dedede;
+}
+
+.education-top {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.education-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.education-bottom > span:nth-child(2) {
+    margin-right: 40px;
+}
+
+.work-experience-side{
+    flex:1;
+    min-width: 447px;
+}
+
+.work-experience-side  h1 {
+    font-size:  2.25rem;
+    margin-bottom: 0.94rem;
+}
+
+.work-experience-section {
+    display: flex;
+    align-items: center;
+}
+
+/* .work-experience-section > svg {
+    flex-basis: 10%;
+} */
+
+.work-experience-side .work-top {
+    font-size: 1.5rem;
+    margin-bottom: 1.94rem;
+    margin-left: 1.5rem;
+}
+
+.work-experience-side .work-side-bottom{
+    font-size: 1rem;
+    margin-left: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.work-side {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    border-bottom: 1px solid #dedede;
+    padding: 20px 20px 20px 0;
+}
+
+.work-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.work-bottom > span:nth-child(2) {
+    margin-right: 40px;
+ }
+
+ @media(max-width:1135px) {
+    .education-side {
+        flex:1;
+    }
+
+    .work-experience-side{
+        padding-top: 3rem;
+    }
+ }
+ @media(max-width:690px){
+    .education-and-work-section{
+        padding-left: 2rem;
+    }
+ }
+
+
+ /* MEDIA FOR EDUCATION AND WORK EXPERIANCE */
